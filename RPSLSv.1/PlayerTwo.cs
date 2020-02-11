@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RPSLSv._1
 {
-    class Human
+    class PlayerTwo
     {
     }
 }
