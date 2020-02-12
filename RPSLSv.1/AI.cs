@@ -4,7 +4,28 @@ using System.Text;
 
 namespace RPSLSv._1
 {
-    class AI
+    public class AI : Player
     {
+        
+
+
+        public AI()
+        {
+
+
+
+        }
+        public  void ChooseGesture(List<string> gestures)
+        {
+            foreach (string gesture in gestures)
+            {
+                Console.WriteLine(gesture);
+                
+                
+            }
+        }
+        
+
+
     }
 }

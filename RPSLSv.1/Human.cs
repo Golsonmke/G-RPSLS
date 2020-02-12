@@ -4,7 +4,9 @@ using System.Text;
 
 namespace RPSLSv._1
 {
-    class PlayerTwo
+    public class Human : Player
     {
+        Gestures gestures;
+
     }
 }

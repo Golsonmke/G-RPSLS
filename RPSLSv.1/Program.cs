@@ -6,7 +6,15 @@ namespace RPSLSv._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+
         }
+        public Program()
+        {
+          Game Game = new Game();
+            Game.RunGame();
+            
+        }
+
     }
 }
