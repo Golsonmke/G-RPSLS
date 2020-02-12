@@ -4,27 +4,24 @@ using System.Text;
 
 namespace RPSLSv._1
 {
-    public class Player : Gestures
+    public abstract class Player 
     {
         
 
-
         public Player()
         {
-
-
-
-
-        }
+           
            
 
-        public void ChooseYourGesture(List<string> gestures)
+        }
+
+
+        public void ChooseYourGesture(string gestures)
         {
-            foreach (string gesture in gestures)
-            {
-                Console.WriteLine("Choose your Gesture: ");
-                gestures = Console.ReadLine();
-            }
+            Console.WriteLine("Choose your Gesture");
+            _ = Console.ReadLine();
+
+
 
         }
 
@@ -36,4 +33,4 @@ namespace RPSLSv._1
 
 
        
-}    
+}

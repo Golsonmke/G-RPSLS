@@ -6,7 +6,21 @@ namespace RPSLSv._1
 {
     public class Human : Player
     {
-        Gestures gestures;
+        
+        int score;
 
+        public Human()
+        {
+
+
+        }
+        public override void ChooseYourGesture()
+        {
+            
+            Console.WriteLine("Choose your Gesture");
+            gesture = Console.ReadLine();
+
+
+        }
     }
 }

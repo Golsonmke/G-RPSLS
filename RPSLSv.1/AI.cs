@@ -6,8 +6,8 @@ namespace RPSLSv._1
 {
     public class AI : Player
     {
-        
 
+        int Score;
 
         public AI()
         {
@@ -15,14 +15,9 @@ namespace RPSLSv._1
 
 
         }
-        public  void ChooseGesture(List<string> gestures)
+        public  override void ChooseGesture(Random random)
         {
-            foreach (string gesture in gestures)
-            {
-                Console.WriteLine(gesture);
-                
-                
-            }
+            return random.Next(0, 5);
         }
         
 

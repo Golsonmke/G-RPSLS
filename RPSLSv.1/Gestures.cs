@@ -13,26 +13,16 @@ namespace RPSLSv._1
         public string spock;
 
 
-        public Gestures(string rock, string paper, string scissor, string lizard, string spock)
+        public Gestures()
         {
 
-            this.rock = "Rock";
-            this.paper = "Paper";
-            this.scissor = "Scissor";
-            this.lizard = "Lizard";
-            this.spock = "Spock";
 
-            List<string> gestures = new List<string>();
 
-            gestures.Add(rock);
-            gestures.Add(paper);
-            gestures.Add(scissor);
-            gestures.Add(lizard);
-            gestures.Add(spock);
-
-            
         }
-
+       
+                
+            
+        
 
         //rock > scissors,Lizard
         //paper > rock, spock
@@ -41,15 +31,15 @@ namespace RPSLSv._1
         //Spock > rock, scissors
 
        
-        }
-
-
-
-
-
-
-
     }
+
+
+
+
+
+
+
+    
 
 }
 
