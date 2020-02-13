@@ -14,12 +14,10 @@ namespace RPSLSv._1
 
 
         }
-        public override void ChooseYourGesture()
+        public void ChooseYourGesture()
         {
             
-            Console.WriteLine("Choose your Gesture");
-            gesture = Console.ReadLine();
-
+            
 
         }
     }

@@ -6,18 +6,25 @@ namespace RPSLSv._1
 {
     public class AI : Player
     {
-
+        
         int Score;
 
         public AI()
         {
-
-
+           
+              
+            
 
         }
-        public  override void ChooseGesture(Random random)
+        public  void ChooseGesture(int min, int max)
         {
-            return random.Next(0, 5);
+            string gesture;
+
+            gesture = random.Next(0, 4);
+            Console.WriteLine("Computer chose"  + gesture);
+            Console.WriteLine("Please press Enter key.");
+
+
         }
         
 
