@@ -84,19 +84,17 @@ namespace RPSLSv._1
             Console.WriteLine(player2.gesture);
 
             if ((player1.gesture == "Rock" && player2.gesture == "Rock") || (player1.gesture == "Paper" && player2.gesture == "Paper") || (player1.gesture == "Scissor" && player2.gesture == "Scissor") || (player1.gesture == "Lizard" && player2.gesture == "Lizard")|| (player1.gesture == "Spock" && player1.gesture == "Spock")
-;           {
-             
-                Console.WriteLine("It's a Tie!");
+            {
+                Console.WriteLine("It's a TIE!");
             }
-
             else if ((player1.gesture == "Rock" && player2.gesture == "Scissor" ) || (player1.gesture == "Rock" && player2.gesture == "Lizard") || (player1.gesture == "Paper" && player2.gesture == "Rock") || (player1.gesture == "Paper" && player2.gesture == "Spock") || (player1.gesture == "Scissors" && player2.gesture == "Paper") || (player1.gesture == "Scissors"  && player2.gesture == "Lizard") || (player1.gesture == "Lizard" && player2.gesture == "Spock") || (player1.gesture == "Lizard" && player2.gesture == "Paper") || ( player1.gesture == "Spock" && player2.gesture == "Scissors") || (player1.gesture == "Spock"  && player2.gesture == "Rock")
             {
-                Console.WriteLine("Player1 Wins!");
+                Console.WriteLine("Player1 WINS!!");
                 player1score++;
             }
             else
             {
-                Console.WriteLine("Player 2 Wins!");
+                Console.WriteLine("Player 2 WINS!");
                 Console.ReadLine();
             }
                    
@@ -104,7 +102,7 @@ namespace RPSLSv._1
         }
         public void DeterminRoundWinner()
         {
-           
+           if( player1score )
 
         }
         public void IncrementScore()
@@ -119,9 +117,10 @@ namespace RPSLSv._1
         {
             DisplayRules();
             GetNumberOfPlayers();
-            SetPlayers();
 
-           
+
+
+
         }
 
 
