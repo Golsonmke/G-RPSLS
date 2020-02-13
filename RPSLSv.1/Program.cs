@@ -8,9 +8,9 @@ namespace RPSLSv._1
         {
 
 
-        }
-        public Program()
-        {
+        
+       
+        
           Game Game = new Game();
             Game.RunGame();
             
