@@ -78,46 +78,52 @@ namespace RPSLSv._1
         //Spock > rock, scissors
         // What are the Out comes of the Game? Win Lose and Tie.
         public void CompareGestures( ) //Loop if Tied
-        
         {
-            
-            string gesture;
-            gesture = Console.ReadLine();
-            Console.WriteLine(player1.gesture);
-            Console.WriteLine(player2.gesture);
-            
-            
-            if ((player1.gesture == "Rock" && player2.gesture == "Rock") || (player1.gesture == "Paper" && player2.gesture == "Paper") || (player1.gesture == "Scissor" && player2.gesture == "Scissor") || (player1.gesture == "Lizard" && player2.gesture == "Lizard") || (player1.gesture == "Spock" && player1.gesture == "Spock"))
+            int counter = 0;
+            do
             {
-                Console.WriteLine("It's a TIE!");
+                string gesture;
+                gesture = Console.ReadLine();
+                Console.WriteLine(player1.gesture);
+                Console.WriteLine(player2.gesture);
+
+
+                if ((player1.gesture == player2.gesture ) || (player1.gesture == "Paper" && player2.gesture == "Paper") || (player1.gesture == "Scissor" && player2.gesture == "Scissor") || (player1.gesture == "Lizard" && player2.gesture == "Lizard") || (player1.gesture == "Spock" && player1.gesture == "Spock"))
+                {
+                    Console.WriteLine("It's a TIE!");
+                }
+                else if ((player1.gesture == "Rock" && player2.gesture == "Scissor") || (player1.gesture == "Rock" && player2.gesture == "Lizard") || (player1.gesture == "Paper" && player2.gesture == "Rock") || (player1.gesture == "Paper" && player2.gesture == "Spock") || (player1.gesture == "Scissors" && player2.gesture == "Paper") || (player1.gesture == "Scissors" && player2.gesture == "Lizard") || (player1.gesture == "Lizard" && player2.gesture == "Spock") || (player1.gesture == "Lizard" && player2.gesture == "Paper") || (player1.gesture == "Spock" && player2.gesture == "Scissors") || (player1.gesture == "Spock" && player2.gesture == "Rock"))
+                {
+                    Console.WriteLine("Player1 WINS!!");
+                    player1Score++;
+                }
+                else
+                {
+                    Console.WriteLine("Player 2 WINS!");
+                    player2Score++;
+
+
+                }
+                counter++;
             }
-            else if ((player1.gesture == "Rock" && player2.gesture == "Scissor" ) || (player1.gesture == "Rock" && player2.gesture == "Lizard") || (player1.gesture == "Paper" && player2.gesture == "Rock") || (player1.gesture == "Paper" && player2.gesture == "Spock") || (player1.gesture == "Scissors" && player2.gesture == "Paper") || (player1.gesture == "Scissors"  && player2.gesture == "Lizard") || (player1.gesture == "Lizard" && player2.gesture == "Spock") || (player1.gesture == "Lizard" && player2.gesture == "Paper") || ( player1.gesture == "Spock" && player2.gesture == "Scissors") || (player1.gesture == "Spock"  && player2.gesture == "Rock"))
-            {
-                Console.WriteLine("Player1 WINS!!");
-                player1Score++;
-            }
-            else
-            {
-                Console.WriteLine("Player 2 WINS!");
-                player2Score++;
-                    
-            
-            }
-           
+            while (counter < 2);
            
         }
         public void DisplayWinner()
         {
-            if (p1RoundScore >= 2)
-            {
-                Console.WriteLine("Player 1 WINS!");
+            
+            
+                if (p1RoundScore >= 2)
+                {
+                    Console.WriteLine("Player 1 WINS!");
 
-            }
-            else if (p2RoundScore >= 2)
-            {
-                Console.WriteLine("Player 2 WINS");
-            }
+                }
+                else if (p2RoundScore >= 2)
+                {
+                    Console.WriteLine("Player 2 WINS");
 
+                }
+           
 
         }
         public void DisplayGestures()

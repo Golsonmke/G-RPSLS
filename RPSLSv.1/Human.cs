@@ -12,16 +12,8 @@ namespace RPSLSv._1
 
         public Human()
         {
-            List<string> gestures = new List<string>();
-            gestures.Add("Rock");
-            gestures.Add("Paper");
-            gestures.Add("Scissors");
-            gestures.Add("Lizard");
-            gestures.Add("Spock");
-            foreach (string gesture in gestures)
-            {
-                Console.WriteLine(gesture);
-            }
+            
+            
         }
 
 
@@ -31,13 +23,14 @@ namespace RPSLSv._1
 
             string input;
 
-            Console.WriteLine("Choose Your Option: \n Rock, Paper, Scissors, Lizard, or Spock");
+           
             input = Console.ReadLine();
 
             switch (input)
             {
                 case "Rock":
                     Console.WriteLine("You chose Rock");
+                    this.gesture = "Rock";
                     break;
                 case "Paper":
                     Console.WriteLine("You chose Paper");
