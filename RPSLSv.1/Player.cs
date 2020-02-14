@@ -12,7 +12,7 @@ namespace RPSLSv._1
 
         public Player()
         {
-           
+
         }
 
 

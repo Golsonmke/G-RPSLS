@@ -29,20 +29,29 @@ namespace RPSLSv._1
             switch (input)
             {
                 case "Rock":
-                    Console.WriteLine("You chose Rock");
+                case "rock":
+                    Console.WriteLine("Player: " + input);
                     this.gesture = "Rock";
                     break;
                 case "Paper":
-                    Console.WriteLine("You chose Paper");
+                case "paper":
+                    Console.WriteLine("Player: " + input);
+                    this.gesture = "Paper";
                     break;
                 case "Scissors":
-                    Console.WriteLine("You chose Scissors");
+                case "scissors":
+                    Console.WriteLine("Player: " + input);
+                    this.gesture = "Scissors";
                     break;
                 case "Lizard":
-                    Console.WriteLine("You chose Lizard");
+                case "lizard":
+                    Console.WriteLine("Player: " + input);
+                    this.gesture = "Lizard";
                     break;
                 case "Spock":
-                    Console.WriteLine("You chose Spock");
+                case "spock":
+                    Console.WriteLine("Player: " + input);
+                    this.gesture = "Spock";
                     break;
                 default:
                     Console.WriteLine("Not a vailed Gesture");
