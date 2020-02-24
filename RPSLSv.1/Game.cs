@@ -86,16 +86,18 @@ namespace RPSLSv._1
             int counter = 0;
             do
             {
+               
                 string gesture;
+                Console.WriteLine("Please Enter a Gesture");
                 gesture = Console.ReadLine();
-                Console.WriteLine(player1.gesture);
-                Console.WriteLine(player2.gesture);
+               
 
 
                 if ((player1.gesture == player2.gesture) || (player1.gesture == "Paper" && player2.gesture == "Paper") || (player1.gesture == "Scissor" && player2.gesture == "Scissor") || (player1.gesture == "Lizard" && player2.gesture == "Lizard") || (player1.gesture == "Spock" && player1.gesture == "Spock"))
                 {
                    
                     Console.WriteLine("It's a TIE!");
+                 
                     
                 }
                 else if ((player1.gesture == "Rock" && player2.gesture == "Scissor") || (player1.gesture == "Rock" && player2.gesture == "Lizard") || (player1.gesture == "Paper" && player2.gesture == "Rock") || (player1.gesture == "Paper" && player2.gesture == "Spock") || (player1.gesture == "Scissors" && player2.gesture == "Paper") || (player1.gesture == "Scissors" && player2.gesture == "Lizard") || (player1.gesture == "Lizard" && player2.gesture == "Spock") || (player1.gesture == "Lizard" && player2.gesture == "Paper") || (player1.gesture == "Spock" && player2.gesture == "Scissors") || (player1.gesture == "Spock" && player2.gesture == "Rock"))
@@ -114,14 +116,19 @@ namespace RPSLSv._1
                 }
                 counter++;
 
-                Console.WriteLine( "Player 1 Score: " + player1Score);
-                Console.WriteLine("Player 2 Score: " + player2Score);
+                Console.WriteLine("Player 1 Score: " + player1Score++);
+                Console.WriteLine("Player 2 Score: " + player2Score++);
             }
             while (counter < 3);
            
         }
+        public void DisplayRoundWinner()
+        {
 
-        public void DisplayWinner()
+        }
+        
+
+        public void DisplayGameWinner()
         {
             int counter = 0;
             do
@@ -157,7 +164,7 @@ namespace RPSLSv._1
             foreach(string gesture in gestures)
             {
              
-                Console.WriteLine("Choose " + gesture);
+                Console.WriteLine( gesture);
             }
         }
         public void PlayAgain()
@@ -168,6 +175,7 @@ namespace RPSLSv._1
             {
 
                 Console.WriteLine("Would you like to play again?");
+                Console.WriteLine("Y / N");
                 string input = Console.ReadLine();
                 switch (input)
                 {
@@ -204,7 +212,7 @@ namespace RPSLSv._1
             player1.ChooseGesture();
             player2.ChooseGesture();
             CompareGestures();
-            DisplayWinner();
+            DisplayGameWinner();
 
 
 

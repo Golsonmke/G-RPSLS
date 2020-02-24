@@ -24,7 +24,7 @@ namespace RPSLSv._1
         {
             var list = new List<string> { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
             var rnd = new Random();
-            Console.WriteLine("Computer chose " + list[rnd.Next(0, list.Count)]);
+            Console.WriteLine("Computer chose: " + list[rnd.Next(0, list.Count)]);
 
 
 
